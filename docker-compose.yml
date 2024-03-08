@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sgi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 3002:80
